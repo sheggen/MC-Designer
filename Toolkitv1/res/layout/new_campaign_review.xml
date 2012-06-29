@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2011 Wglxy.com Derived from Google IO Schedule App, Copyright 
+	2010 Google, Inc. Licensed under the Apache License, Version 2.0 (the "License"); 
+	you may not use this file except in compliance with the License. You may 
+	obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/TitleBar" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:onClick="onClickHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView
+            style="@style/TitleBarLogo"
+            android:layout_width="0dp"
+            android:layout_weight="1.01"
+            android:contentDescription="@string/description_logo"
+            android:src="@drawable/titlebluebutton1" />
+
+        <ImageView
+            style="@style/TitleBarSeparator"
+            android:contentDescription="@string/title_bar_separator" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_about"
+            android:onClick="onClickAbout"
+            android:src="@drawable/title_about" />
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:onClick="onClickSearch"
+            android:src="@drawable/title_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/progressIconBlack1"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon2" />
+
+        <ImageView
+            android:id="@+id/progressIconBlack2"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon2" />
+
+        <ImageView
+            android:id="@+id/progressIconBlack3"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon2" />
+
+        <ImageView
+            android:id="@+id/progressIconBlack4"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon2" />
+
+        <ImageView
+            android:id="@+id/progressIconBlack5"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon2" />
+
+        <ImageView
+            android:id="@+id/progressIconGreen"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/progress_icon"
+            android:src="@drawable/progressicon1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/review_your_new_campaign"
+        android:textAppearance="@style/TitleBarText" />
+
+    <ScrollView
+        android:id="@+id/reviewScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reviewScrollHorizontalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                style="@style/TextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/title"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textTitleInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/this_is_the_title_of_your_campaign"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/textPurpose"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/purpose"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textPurposeInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/this_is_the_purpose_of_your_campaign"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/textInstructions"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/instructions"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textInstructionsInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/here_are_some_basic_instructions_for_your_campaign_participants"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/editDescriptionButton"
+                style="@style/ButtonSmall"
+                android:onClick="onClickReview"
+                android:text="@string/edit_description" />
+
+            <LinearLayout
+                android:id="@+id/seperatorLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSensors"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/sensors"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textSensorsInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/your_campaign_uses_these_sensors_"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/editSensorButton"
+                style="@style/ButtonSmall"
+                android:onClick="onClickReview"
+                android:text="@string/edit_sensors" />
+
+            <LinearLayout
+                android:id="@+id/seperatorLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textParticipants"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/participants"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textParticipantsInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/you_selected_these_participants"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/editParticipantButton"
+                style="@style/ButtonSmall"
+                android:onClick="onClickReview"
+                android:text="@string/edit_participants" />
+
+            <LinearLayout
+                android:id="@+id/seperatorLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textIncentives"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/incentives"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textIncentivesInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/you_selected_these_incentives"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/editIncentivesButton"
+                style="@style/ButtonSmall"
+                android:onClick="onClickReview"
+                android:text="@string/edit_incentives" />
+
+            <LinearLayout
+                android:id="@+id/seperatorLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textOptions"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/options"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/textOptionsInput"
+                style="@style/TextBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_selected_these_options"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/editOptionsButton"
+                style="@style/ButtonSmall"
+                android:onClick="onClickReview"
+                android:text="@string/edit_options" />
+
+            <LinearLayout
+                android:id="@+id/backNextButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="bottom|center" >
+
+                <ImageButton
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#AA087FAA"
+                    android:contentDescription="@string/cancel_button"
+                    android:gravity="center"
+                    android:src="@drawable/arrow1"
+                    android:text="Back" />
+
+                <ImageButton
+                    android:id="@+id/next_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#AA087FAA"
+                    android:contentDescription="@string/next_button"
+                    android:gravity="center"
+                    android:src="@drawable/arrow2"
+                    android:text="Next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

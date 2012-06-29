@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/uncc/cci/toolkit/newCampaign/ContactAccessor.java|com/uncc/cci/toolkit/newCampaign/ContactAccessorSdk3_4.java|com/uncc/cci/toolkit/newCampaign/ContactAccessorSdk5.java|com/uncc/cci/toolkit/newCampaign/ContactInfo.java|com/uncc/cci/toolkit/newCampaign/ContactPicker.java|com/uncc/cci/toolkit/newCampaign/TemporaryClass.java|com/uncc/cci/toolkit/AddParticipants.java|com/uncc/cci/toolkit/AddSensors.java|com/uncc/cci/toolkit/DataHelperGroup.java|com/uncc/cci/toolkit/F2Activity.java|com/uncc/cci/toolkit/F4Activity.java|com/uncc/cci/toolkit/F6Activity.java|com/uncc/cci/toolkit/NewCampaign.java|com/uncc/cci/toolkit/newCampaign/CopyOfCampaignAddSensorsActivity.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-4.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-cache-4.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.1.4.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.1.3.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

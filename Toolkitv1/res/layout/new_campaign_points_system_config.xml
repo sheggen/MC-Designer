@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_popup"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/directMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/points_system_options"
+        android:textColor="#aaFFFFFF"
+        android:textSize="@dimen/text_size_medium" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp"
+        android:background="#FF555555"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            style="@style/TextBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    style="@style/TextBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/starting_points" />
+
+                <Spinner
+                    android:id="@+id/numbersOfpoints"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/numberofpoints_spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp" >
+
+                <TextView
+                    android:id="@+id/gooddatapoints"
+                    style="@style/TextBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0.01"
+                    android:gravity="center_vertical"
+                    android:text="@string/points_for_submission" />
+
+                <Spinner
+                    android:id="@+id/numbersOfPointsPerSubmission"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/numberofpoints_spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01" >
+
+                <TextView
+                    android:id="@+id/message1"
+                    style="@style/TextBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0.01"
+                    android:gravity="center_vertical"
+                    android:text="@string/points_for_next_level" />
+
+                <Spinner
+                    android:id="@+id/numberOfPointsLevel"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/numberofpoints_spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/TextBody"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1.31"
+                    android:gravity="center_vertical"
+                    android:text="@string/points_to_get_in_leaderboard" />
+
+                <Spinner
+                    android:id="@+id/numberOfPointsLeaderboard"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/numberofpoints_spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/messageInstructions"
+                style="@style/TextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:text="@string/provide_instructions" />
+
+            <EditText
+                android:id="@+id/instructionsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:text="@string/instructions"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/newlevelmessage"
+                style="@style/TextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/when_the_user_achieves_a_new_level_" />
+
+            <EditText
+                android:id="@+id/newlevelinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="True"
+                android:text="@string/message_accept_data"
+                android:textSize="@dimen/text_size_small" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FF555555"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_point_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF087FAA"
+                android:text="@string/submit"
+                android:textSize="@dimen/text_size_medium" />
+
+            <Button
+                android:id="@+id/cancel_point_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF087FAA"
+                android:text="@string/cancel"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/MapText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/center_the_map_on_your_region_of_interest_zoom_in_out_to_the_desired_area_"
+        android:textColor="#aaFFFFFF"
+        android:textSize="@dimen/text_size_small" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_below="@id/MapText"
+        android:layout_marginBottom="10dp"
+        android:apiKey="0dl3K4Qxhbm4Zu5t-LvwNLowLT-NItTfwzGwOeA"
+        android:clickable="true"
+        android:state_enabled="true" />
+
+    <!--
+         android:apiKey="0dl3K4Qxhbm5UlhshGdzMZM0DN1nsXrD9gJUieA" /> Office 
+		Desktop (Release key)
+    -->
+    <!--
+         android:apiKey="07ylaewi7vQOELt_q5b9kjCxeVGS_TB91fi_tyg" /> Laptop 
+		(not working)
+    -->
+    <!-- android:apiKey="07ylaewi7vQNREa0u_razDZBxoSyTqpx6Q8ePqQ" /> -->
+    <!-- android:apiKey="0PcDEcVyDHwKcMGGM1cieZQ7KdXB5o1c73XRl9Q" /> -->
+    <!-- android:apiKey="07ylaewi7vQOELt_q5b9kjCxeVGS_TB91fi_tyg" /> -->
+
+    <ImageView
+        android:id="@+id/radar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save"
+        android:layout_below="@+id/MapText"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/map_area"
+        android:src="@drawable/radar" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FF087FAA"
+        android:text="@string/submit"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

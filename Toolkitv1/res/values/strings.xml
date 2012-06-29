@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Copyright 2011 Wglxy.com Licensed under the Apache License, Version 
+	2.0 (the "License"); you may not use this file except in compliance with 
+	the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<resources>
+	<string name="button_pick_contact">Pick Contact</string>
+	<string name="app_name">Toolkit</string>
+	<string name="description_logo" />
+	<string name="description_about">About</string>
+	<string name="description_home">Home</string>
+	<string name="description_search">Search</string>
+	<string name="title_about">About</string>
+	<string name="title_search">Search</string>
+	<string name="title_feature1">My Campaigns</string>
+	<string name="title_feature2">Feature 2</string>
+	<string name="title_feature3">New Campaign</string>
+	<string name="title_feature4">Feature 4</string>
+	<string name="title_feature5">Join a Campaign</string>
+	<string name="title_feature6">Feature 6</string>
+	<string name="title_AddParticipants">Participants</string>
+	<string name="title_AddSensors">Sensors</string>
+	<string name="title_CampaignInfo">Basic Info</string>
+	<string name="title_CampaignInviteParticipants">Participants</string>
+	<string name="title_CampaignProfileMatch">Find Matching Participants</string>
+	<string name="title_CampaignAddOptions">Additional Options</string>
+	<string name="title_CampaignAddIncentives">Add Incentives</string>
+	<string name="title_CampaignReviewOptions">Launch Your Campaign</string>
+	<string name="title_ContactAccessor">Temp</string>
+	<string name="title_ContactInfo">Temp</string>
+	<string name="title_TemporaryClass">Temp</string>
+	
+	<string name="feature1_host">Campaigns By You</string>
+	<string-array name="host_list">
+		<item>Campaign 1</item>
+		<item>Campaign 2</item>
+	</string-array>
+	<string name="feature1_part">Campaigns By Your Friends</string>
+	<string-array name="part_list">
+		<item>Campaign 1</item>
+		<item>Campaign 2</item>
+		<item>Campaign 3</item>
+	</string-array>
+	<string name="feature2_intro">Feature 2 content goes here.</string>
+	<string name="feature3_intro">Create a new campaign</string>
+	<string name="feature4_intro">Feature 4 content goes here.</string>
+	<string name="feature5_intro">Active Campaigns</string>
+	<string name="feature6_intro">Feature 6 content goes here.</string>
+	<string name="about_intro">This app is a demo to show you how to do an Android
+		app based on the Dashboard pattern that has been used in apps like
+		Twitter, Google IO, and Evernote.</string>
+	<string name="search_intro">Content for the Search page goes here.</string>
+	<string name="direct_message_message1">Thank you for joining this campaign, we value your
+		participation.</string>
+
+	<string name="direct_message_idle">tell the user:</string>
+	<string name="direct_message_optional">You are doing great! Keep going!</string>
+
+	<string-array name="direct_message_spinner_array">
+		<item>minutes</item>
+		<item>hours</item>
+		<item>days</item>
+		<item>weeks</item>
+		<item>months</item>
+	</string-array>
+	
+	<string-array name="join_campaign">
+		<item>Only one who devotes himself to a cause with his whole strength
+			and soul can be a true master Albert Einstein</item>
+		<item>Any man\'s finest hour, is that moment when he has worked his
+			heart out in a good cause and lies exhausted on the field of battle -
+			victorious. Vince Lombardi</item>
+		<item>Welcome, we are glad to have you!</item>
+		<item>Thank you for joining this campaign, your participation is
+			valuable to us and the community</item>
+	</string-array>
+	<string-array name="idle_messages">
+		<item>You only need a few more submissions to reach your goal. Keep
+			going, you are almost there!</item>
+		<item>We notice when we no longer get valuable submissions like yours.
+			We need you to come back and collect data for us!</item>
+		<item>Please stick around. Keep submitting data!</item>
+	</string-array>
+
+
+	<string-array name="directmessageincentive_options_regular">
+		<item>Join Campaign Message</item>
+		<item>Idle Message</item>
+		<item>Motivational Messages</item>
+	</string-array>
+	<string-array name="directmessageincentive_options_goal">
+		<item>Join Campaign Message</item>
+		<item>Idle Message</item>
+		<item>Motivational Messages</item>
+		<item>Target Attained Message</item>
+	</string-array>
+	<string-array name="dm_goalbased_motivationalmessages">
+		<item>Thanks for providing high quality data. Keep it up!</item>
+		<item>You are doing great! Keep going!</item>
+		<item>Each submission adds to a pool of data that will create change!
+			Submit more data</item>
+		<item>Need some alone time? take a walk, submit data!</item>
+		<item>Small steps make a big difference… keep submitting!</item>
+		<item>Each submission adds to a pool of data that will create change!
+			Submit more data</item>
+		<item>Sneak activity into your daily routine… Collect more data</item>
+		<item>Didn\'t get to your goal today, No problem! Try again tomorrow
+		</item>
+	</string-array>
+	<string-array name="dm_regular_motivationalmessages">
+		<item>Thanks for providing high quality data. Keep it up!</item>
+		<item>You are doing great! Keep going!</item>
+		<item>Each submission adds to a pool of data that will create change!
+			Submit more data</item>
+		<item>Need some alone time? take a walk, submit data!</item>
+		<item>Small steps make a big difference… keep submitting!</item>
+		<item>Each submission adds to a pool of data that will create change!
+			Submit more data</item>
+		<item>Sneak activity into your daily routine… Collect more data</item>
+	</string-array>
+	<string-array name="dm_goalbased_reachedtarget">
+		<item>You have reached the target goal. You should be very proud!
+		</item>
+		<item>Good Job! Achievement brings its own anti-climax Maya Angelou
+		</item>
+		<item>The major reason for setting a goal is for what it makes of you
+			to accomplish it. What it makes of you will always be the far greater
+			value than what you get Jim Rohn</item>
+		<item>Thanks for participating!</item>
+	</string-array>
+	<string name="message_accept_data">Congratulations! You made it to a new level!
+	</string>
+	<string name="accelerometer_options">Accelerometer Options</string>
+	<string name="accelerometer_mode_1">Accelerometer Mode:</string>
+	<string name="submit">Submit</string>
+	<string name="seperator">separator</string>
+	<string name="tell_me_about_your_incentives">Tell Me About Your Incentives</string>
+	<string name="direct_messages">Direct Messages</string>
+	<string name="points_system">Points System</string>
+	<string name="monetary">Monetary</string>
+	<string name="none">None</string>
+	<string name="progress_bar">Progress bar icon</string>
+	<string name="back_arrow">Back arrow</string>
+	<string name="next_arrow">Next Arrow</string>
+	<string name="back">Back</string>
+	<string name="next">Next</string>
+	<string name="what_question_will_you_ask_">What question will you ask?</string>
+	<string name="message_instructions">For each submission you earn {amount}. \nThe
+		maximum amount of money you can earn is {Amount}</string>
+	<string name="direct_message_options">Direct Message Options</string>
+	<string name="goal_based">Goal Based</string>
+	<string name="regular">Regular</string>
+	<string name="cancel">Cancel</string>
+	<string-array name="payment_method">
+		<item>PayPal</item>
+		<item>Email Alert</item>
+	</string-array>
+	<string-array name="numberofpoints_spinner">
+		<item>2</item>
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+	</string-array>
+	<string name="instructions">Instructions</string>
+	<string name="title_bar_separator">title bar separator</string>
+	<string name="review_your_new_campaign">Review Your New Campaign</string>
+	<string name="title">Title</string>
+	<string name="title_of_campaign">Title of campaign</string>
+	<string name="purpose">Purpose</string>
+	<string name="this_is_the_purpose_of_this_campaign">This is the purpose of this campaign</string>
+	<string name="sensors_used">Sensors Used</string>
+	<string name="this_campaign_uses_these_sensors_">This campaign uses these sensors:</string>
+	<string name="participants">Participants</string>
+	<string name="participants_needed_for_this_campaign">Participants needed for this campaign</string>
+	<string name="incentives">Incentives</string>
+	<string name="incentives_provided_for_this_campaign">Incentives provided for this campaign</string>
+	<string name="launch_campaign">Launch Campaign</string>
+	<string name="cancel_button">cancel button</string>
+	<string name="next_button">next button</string>
+	<string name="progress_icon">progress icon</string>
+	<string name="tell_me_what_other_options_you_would_like">Tell me what other options you would like</string>
+	<string name="set_permissions">Set Permissions</string>
+	<string name="set_timeline">Set Timeline</string>
+	<string name="target_number_of_submissions">Target Number of Submissions</string>
+	<string name="minimum_number_of_participants">Minimum Number of Participants</string>
+	<string name="provide_an_example">Provide an Example</string>
+	<string name="ask_participants_a_question">Ask Participants a Question</string>
+	<string name="question_text">Question text:</string>
+	<string name="plus_button">plus button</string>
+	<string name="this_is_the_title_of_your_campaign">This is the Title of your campaign</string>
+	<string name="this_is_the_purpose_of_your_campaign">This is the purpose of your campaign</string>
+	<string name="sensors">Sensors</string>
+	<string name="your_campaign_uses_these_sensors_">Your campaign uses these sensors:</string>
+	<string name="edit_sensors">Edit Sensors</string>
+	<string name="you_selected_these_participants">You selected these participants</string>
+	<string name="edit_participants">Edit Participants</string>
+	<string name="you_selected_these_incentives">You selected these incentives</string>
+	<string name="edit_incentives">Edit Incentives</string>
+	<string name="options">Options</string>
+	<string name="you_selected_these_options">You selected these options</string>
+	<string name="edit_options">Edit Options</string>
+	<string name="edit_description">Edit Description</string>
+	<string name="here_are_some_basic_instructions_for_your_campaign_participants">Here are some basic instructions for your campaign participants</string>
+	<string name="points_system_options">Points System Options</string>
+	<string name="starting_points">Starting Points</string>
+	<string name="points_for_submission">Points for Submission</string>
+	<string name="points_for_next_level">Points for Next Level</string>
+	<string name="points_to_get_in_leaderboard">Points to get in Leaderboard</string>
+	<string name="provide_instructions">Provide Instructions</string>
+	<string name="when_the_user_achieves_a_new_level_">"When the user achieves a new level: "</string>
+	<string name="males_only">Males only</string>
+	<string name="females_only">Females only</string>
+	<string name="gender_options">Gender Options</string>
+	<string name="invite_by_facebook_">Invite (by Facebook)</string>
+	<string name="find_participants">Find Participants</string>
+	<string name="tell_me_about_your_ideal_participant">Tell me about your ideal participant</string>
+	<string name="open_to_the_public">Open to the Public</string>
+	<string name="invite_by_email_">Invite (by email)</string>
+	<string name="set_gender">Set Gender</string>
+	<string name="set_age_range">Set Age Range</string>
+	<string name="set_ethnicity">Set Ethnicity</string>
+	<string name="set_region">Set Region</string>
+	<string name="gps_options">GPS Options</string>
+	<string name="provide_instructions_">Provide instructions:</string>
+	<string name="payment_alert_option">Payment Alert Option</string>
+	<string name="dollarsign">$</string>
+	<string name="amount_for_accepted_data">Amount for Accepted Data</string>
+	<string name="maximum_amount_paid">Maximum amount paid</string>
+	<string name="monetary_options">Monetary Options</string>
+	<string name="permissions_options">Permissions Options</string>
+	<string name="tell_me_about_the_sensors">Tell Me About the Sensors</string>
+	<string name="gps_icon">gps icon</string>
+	<string name="camcorder">Camcorder</string>
+	<string name="accelerometer">Accelerometer</string>
+	<string name="audio">Audio</string>
+	<string name="camera">Camera</string>
+	<string name="gps">GPS</string>
+	<string name="text_icon">text icon</string>
+	<string name="ask_a_question">Ask a Question</string>
+	<string name="give_brief_instructions_to_your_participants">Give brief instructions to your participants</string>
+	<string name="what_is_the_purpose_of_your_campaign_">What is the purpose of your campaign?</string>
+	<string name="give_your_campaign_a_name">Give your campaign a name</string>
+	<string name="basic_info_about_your_new_campaign">Basic Info About Your New Campaign</string>
+	<string name="user_name_">User Name:</string>
+	<string name="password_">Password:</string>
+	<string name="login">Login</string>
+	<string name="asian_pacific_islander">Asian/Pacific Islander</string>
+	<string name="native_american">Native American</string>
+	<string name="multiracial">Multiracial</string>
+	<string name="hispanic_latino">Hispanic/Latino</string>
+	<string name="black_african_american">Black/African American</string>
+	<string name="white_caucasian">White/Caucasian</string>
+	<string name="select_which_ethnicities_you_would_prefer_participate_in_your_campaign">Select which ethnicities you would prefer participate in your campaign</string>
+	<string name="ethnicity_options">Ethnicity Options</string>
+	<string name="center_the_map_on_your_region_of_interest_zoom_in_out_to_the_desired_area_">Center the map on your region of interest.  Zoom in/out to the desired area.</string>
+	<string name="map_area">Map area</string>
+	<string name="use_highest_resolution">Use Highest Resolution</string>
+	<string name="use_lowest_resolution">Use Lowest Resolution</string>
+	<string name="set_resolution">Set Resolution</string>
+	<string name="camera_options">Camera Options</string>
+	<string name="use_auto_focus">Use Auto-focus</string>
+</resources>
